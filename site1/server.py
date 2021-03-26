@@ -132,39 +132,23 @@ def mars_carousel():
                 <html lang="en">
                   <head>
                     <meta charset="utf-8">
-                    <title>Пейзажи Марса!</title>
+                    <title>Пейзажи Марса</title>
                     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
                   </head>
                   <body>
-                    <h1>Первая HTML-страница</h1>
-                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                      <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                      </ol>
+                    <h1>Пейзажи Марса</h1>
+                    <div id="carousel" class="carousel slide" data-ride="carousel">
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img class="d-block w-50" src="{url_for('static', filename='img/mars_1.jpg')}"
-                        alt="здесь должна была быть картинка, но не нашлась">
+                          <img class="img-fluid" src="{url_for('static', filename='img/mars_1.jpg')}" alt="first slide">
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-50" src="{url_for('static', filename='img/mars_2.jpg')}"
-                        alt="здесь должна была быть картинка, но не нашлась">
+                          <img class="img-fluid" src="{url_for('static', filename='img/mars_2.jpg')}" alt="second slide">
                         </div>
                         <div class="carousel-item">
-                          <img class="d-block w-50" src="{url_for('static', filename='img/mars_3.jpg')}"
-                        alt="здесь должна была быть картинка, но не нашлась">
+                          <img class="img-fluid" src="{url_for('static', filename='img/mars_3.jpg')}" alt="third slide">
                         </div>
                       </div>
-                      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                      </a>
-                      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                      </a>
                     </div>
                     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
                   </body>
