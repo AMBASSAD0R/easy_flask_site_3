@@ -5,11 +5,11 @@
     <title>Title</title>
 </head>
 <body>
-    {% set user_list = ['Ivan', 'Alex', 'Frank'] %}
-    <ul>
-        {% for user in user_list %}
-        <li>{{ loop.index }} = {{ user }} {% if loop.first %} first {% endif %}</li>
-        {% endfor %}
-    </ul>
+{% set user_list = ['Ivan', 'Alex', 'Frank'] %}
+<ul>
+    {% for user in user_list %}
+    <li>{{ loop.index }} = {{ user }} {% if loop.first %} first {% endif %}</li>
+    {% endfor %}
+</ul>
 </body>
 </html>
